@@ -7,6 +7,6 @@ import "./header.css";
 
 //stateless components - criamos componentes por meio de variaveis
 //pode tirar os parenteses se desejar
-const Header = () => <header id="main-header">Lojinha de relogios.</header>;
+const Header = () => <header id="main-header">Lojinha de Relógios</header>;
 
 export default Header;
