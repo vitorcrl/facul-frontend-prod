@@ -1,0 +1,44 @@
+.produto-list {
+    margin: 20px auto 0;
+    padding: 0 20px;
+    max-width: 700px;
+    font-family: sans-serif;
+}
+
+.produto-list article {
+    background: rgb(185, 179, 219);
+    font-family: sans-serif;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.produto-list article p {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: dimgray;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.produto-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #3a3a3a;
+    background: none;
+    margin-top: 10px;
+    color: #3a3a3a;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-list article a:hover {
+    background: #5636d3;
+    color: #3a3a3a;
+}
