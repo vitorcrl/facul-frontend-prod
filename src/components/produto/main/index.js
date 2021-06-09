@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        fetch(`https://produtop1.herokuapp.com/produto`)
+        fetch(`${process.env.REACT_APP_API_URL}`)
             .then((produto) =>
                 produto.json().then((produto) => this.setState({ produto }))
             )
@@ -52,13 +52,7 @@ export default class Main extends Component {
                                 <th scope="row">{produto.id}</th>
                                 <td>{produto.nome}</td>
                                 <td>{produto.descricao}</td>
-                                <td>
-                                    {produto.preco.toLocaleString("pt-BR", {
-                                        style: "currency",
-                                        currency: "BRL",
-                                    })}
-                                </td>
-
+                                <td>{produto.preco}</td>
                                 <td align="center">{produto.quantEstoque}</td>
                                 <td>
                                     {" "}
@@ -73,20 +67,30 @@ export default class Main extends Component {
                                     </Link>{" "}
                                 </td>
                                 <td>
-                                    <button
-                                        type="button"
-                                        class="btn btn-warning"
-                                    >
-                                        Atualizar
-                                    </button>
+                                    <td>
+                                        {" "}
+                                        <Link to={`/produtoedit/${produto.id}`}>
+                                            {" "}
+                                            <button
+                                                type="button"
+                                                class="btn btn-warning"
+                                            >
+                                                Atualizar
+                                            </button>{" "}
+                                        </Link>
+                                    </td>
                                 </td>
                                 <td>
-                                    <button
-                                        type="button"
-                                        class="btn btn-danger"
-                                    >
-                                        Excluir
-                                    </button>
+                                    {" "}
+                                    <Link to={`/produtodelete/${produto.id}`}>
+                                        {" "}
+                                        <button
+                                            type="button"
+                                            class="btn btn-danger"
+                                        >
+                                            Excluir
+                                        </button>{" "}
+                                    </Link>
                                 </td>
                             </tr>
                         ))}
