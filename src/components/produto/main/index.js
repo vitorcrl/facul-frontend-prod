@@ -56,7 +56,7 @@ export default class Main extends Component {
                                 <td align="center">{produto.quantEstoque}</td>
                                 <td>
                                     {" "}
-                                    <Link to={`/produto/${produto.id}`}>
+                                    <Link to={`/produtodetail/${produto.id}`}>
                                         {" "}
                                         <button
                                             type="button"
