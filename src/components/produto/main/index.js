@@ -53,7 +53,7 @@ export default class Main extends Component {
                                 <td>{produto.nome}</td>
                                 <td>{produto.descricao}</td>
                                 <td>
-                                    {produto.preco.toLocaleString("pt-BR", {
+                                    {produto.preco.numberFormat("pt-BR", {
                                         style: "currency",
                                         currency: "BRL",
                                     })}
