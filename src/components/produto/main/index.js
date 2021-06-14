@@ -75,7 +75,7 @@ export default class Main extends Component {
                                                 type="button"
                                                 class="btn btn-warning"
                                             >
-                                                Att
+                                                Atualizar
                                             </button>{" "}
                                         </Link>
                                     </td>
