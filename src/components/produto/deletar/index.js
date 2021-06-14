@@ -68,7 +68,7 @@ class DeletarProduto extends Component {
     handleClick = (event) => {
         const { id } = this.props.match.params;
 
-        fetch("https://produtop1.herokuapp.com/produto"`${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}``${id}`, {
             method: "delete",
         })
             .then((data) => {
