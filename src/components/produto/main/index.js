@@ -52,12 +52,7 @@ export default class Main extends Component {
                                 <th scope="row">{produto.id}</th>
                                 <td>{produto.nome}</td>
                                 <td>{produto.descricao}</td>
-                                <td>
-                                    {produto.preco.numberFormat("pt-BR", {
-                                        style: "currency",
-                                        currency: "BRL",
-                                    })}
-                                </td>
+                                <td>{produto.preco}</td>
 
                                 <td align="center">{produto.quantEstoque}</td>
                                 <td>
