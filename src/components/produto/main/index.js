@@ -65,18 +65,18 @@ export default class Main extends Component {
                                         </button>{" "}
                                     </Link>{" "}
                                 </td>
+
                                 <td>
-                                    <td>
-                                        <Link to={`/produtoedit/${produto.id}`}>
-                                            <button
-                                                type="button"
-                                                class="btn btn-warning"
-                                            >
-                                                Atualizar
-                                            </button>
-                                        </Link>
-                                    </td>
+                                    <Link to={`/produtoedit/${produto.id}`}>
+                                        <button
+                                            type="button"
+                                            class="btn btn-warning"
+                                        >
+                                            Atualizar
+                                        </button>
+                                    </Link>
                                 </td>
+
                                 <td>
                                     {" "}
                                     <Link to={`/produtodelete/${produto.id}`}>
