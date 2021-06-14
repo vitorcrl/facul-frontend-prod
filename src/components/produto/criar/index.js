@@ -122,7 +122,7 @@ class CriarProduto extends Component {
     };
 
     handleSubmit = (event) => {
-        fetch(`${process.env.REACT_APP_API_URL}`, {
+        fetch(`https://produtop1.herokuapp.com/produto/`, {
             method: "post",
             body: JSON.stringify(this.state.produto),
             headers: {
