@@ -67,15 +67,13 @@ export default class Main extends Component {
                                 </td>
                                 <td>
                                     <td>
-                                        {" "}
                                         <Link to={`/produtoedit/${produto.id}`}>
-                                            {" "}
                                             <button
                                                 type="button"
                                                 class="btn btn-warning"
                                             >
                                                 Atualizar
-                                            </button>{" "}
+                                            </button>
                                         </Link>
                                     </td>
                                 </td>
